@@ -1,0 +1,83 @@
+body {
+  background-color: #372e29;
+}
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+    color: #f0c75e;
+}
+h4, h5, h6, p, .tomLinks {
+  font-family: 'Montserrat Alternates', sans-serif;
+    color: #f0c75e;
+}
+
+.tomLinks {
+  font-family: 'Montserrat Alternates', sans-serif;
+    color: #f0c75e;
+    margin: auto 1%;
+}
+
+.tomLinks:hover {
+    color: #f0c75e;
+}
+.crown1, .crown2 {
+    height: 60px;
+}
+.gameImg1, .gameImg2 {
+  height: 100px;
+  margin: 5% auto;
+}
+
+.scoreText1, .scoreText2 {
+  margin: 5% auto;
+}
+
+.shootButton {
+  margin-top: 60%;
+}
+
+.titleText {
+  margin: 3% auto;
+  color: #f0c75e;
+}
+
+.definitionText {
+  margin: 3% auto;
+  color: #f0c75e;
+  font-size: 100%;
+}
+
+.titleRockImage {
+  height: 50%;
+  width: 20%;
+}
+
+.roundDes {
+  margin: 5% auto;
+}
+
+#firstSection {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: #372e29;
+}
+
+#secondSection {
+  padding-bottom: 5%;
+  margin-bottom: 0;
+  background-color: #372e29;
+}
+
+#Footer-Container {
+    margin-top: 0;
+    padding-top:  2%;
+    background-color: #372e29;
+}

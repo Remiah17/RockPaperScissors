@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montez&family=Montserrat+Alternates:wght@100;300;400;700;900&family=Montserrat:wght@100;400;900&family=Sacramento&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- TITLE -->
+    <section id="firstSection">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="titleText">ROCK, PAPER, SCISSORS</h1>
+            <h3 class="definitionText">Online rock, paper, and scissors simulator.</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col text-center">
+            <h3>How many wins?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button type="button" name="button" class="btn btn-outline-warning oneRound">1 win</button>
+          </div>
+          <div class="col text-center">
+            <button type="button" name="button" class="btn btn-outline-warning threeRound">3 wins</button>
+          </div>
+          <div class="col text-center">
+              <button type="button" name="button" class="btn btn-outline-warning fiveRound">5 wins</button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section id="secondSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 text-center ">
+              <img src="images/crown.png" class="crown1" alt="crown-picture">
+            <h3 class="titleText">PLAYER 1</h3>
+              <h6 class="scoreText1">SCORE: 0</h6>
+            <img src="images/rock.png" class="gameImg1" alt="rock-smiley-picture">
+            <p class="moveDes1">ROCK!</p>
+          </div>
+          <div class="col-2 text-center">
+            <button type="button" name="button" class="btn btn-outline-warning shootButton">SHOOT!</button>
+            <p class="roundDes text-center"> </p>
+          </div>
+          <div class="col-5 text-center ">
+            <img src="images/crown.png" class="crown2" alt="crown-picture">
+            <h3 class="titleText">PLAYER 2</h3>
+            <h6 class="scoreText2">SCORE: 0</h6>
+            <img src="images/rock.png" class="gameImg2" alt="rock-smiley-picture">
+            <p class="moveDes2">ROCK!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="Footer-Container">
+      <div class="container">
+          <hr>
+        <div class="row">
+          <div class="col text-center">
+            <a href="#" class="tomLinks">Website</a>
+            <a href="#" class="tomLinks">Upwork</a>
+            <a href="#" class="tomLinks">Facebook</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+          <p class="FooterLink">© Copyright 2021 Rustom Mameng</p>
+          </div>
+
+        </div>
+    </section>
+
+    <script src="javascript/index.js" charset="utf-8"></script>
+  </body>
+</html>
