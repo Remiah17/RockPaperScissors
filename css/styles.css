@@ -31,9 +31,19 @@ h4, h5, h6, p, .tomLinks {
 .crown1, .crown2 {
     height: 60px;
 }
+
+.stage {
+  height: 400px;
+}
 .gameImg1, .gameImg2 {
-  height: 100px;
-  margin: 5% auto;
+  height: 300px;
+  position: absolute;
+  
+}
+
+.gameImg2 {
+  transform: scaleX(-1);
+  right: 200px;
 }
 
 .scoreText1, .scoreText2 {
