@@ -59,6 +59,8 @@ h4, h5, h6, p, .tomLinks {
   color: #f0c75e;
 }
 
+
+
 .definitionText {
   margin: 3% auto;
   color: #f0c75e;
@@ -74,6 +76,14 @@ h4, h5, h6, p, .tomLinks {
   margin: 5% auto;
 }
 
+.secondTitle {
+  margin-bottom: 5%;
+}
+
+.hide{
+  display: none;
+}
+
 #firstSection {
   padding-top: 3%;
   padding-bottom: 2%;
@@ -81,6 +91,13 @@ h4, h5, h6, p, .tomLinks {
 }
 
 #secondSection {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 80%;
+  background-color: #372e29;
+}
+
+#thirdSection {
   padding-bottom: 5%;
   margin-bottom: 0;
   background-color: #372e29;
@@ -89,5 +106,6 @@ h4, h5, h6, p, .tomLinks {
 #Footer-Container {
     margin-top: 0;
     padding-top:  2%;
+    padding-bottom:  5%;
     background-color: #372e29;
 }

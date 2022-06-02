@@ -3,6 +3,7 @@ var randomNumber2 = 0;
 var player1Score = 0;
 var player2Score = 0;
 var scoreToWin = 0;
+var settingUp = true;
 
 document.querySelector(".shootButton").onclick = function () {
   shootGame();
@@ -65,6 +66,8 @@ function setRound(roundNum) {
         document.querySelector(".oneRound").classList.remove("btn-warning");
         break;
     }
+    document.getElementById("secondSection").classList.add("hide");
+    document.getElementById("thirdSection").classList.toggle("hide");
   } else {
     alert(
       "It is impossible to change the number of rounds while in game. Refresh the page to start a new round."
