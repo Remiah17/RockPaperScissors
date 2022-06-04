@@ -1,111 +1,190 @@
+/*Main */
+
 body {
   background-color: #372e29;
 }
 
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
+  color: #f0c75e;
 }
-
 h2 {
   font-family: 'Montserrat', sans-serif;
 }
-
-h3 {
-  font-family: 'Montserrat Alternates', sans-serif;
-    color: #f0c75e;
-}
-h4, h5, h6, p, .tomLinks {
+h3, h4, h5, h6, p, a, .tomLinks {
   font-family: 'Montserrat Alternates', sans-serif;
     color: #f0c75e;
 }
 
-.tomLinks {
-  font-family: 'Montserrat Alternates', sans-serif;
-    color: #f0c75e;
-    margin: auto 1%;
-}
-
-.tomLinks:hover {
-    color: #f0c75e;
-}
-.crown1, .crown2 {
-    height: 60px;
-}
-
-.stage {
-  height: 400px;
-}
-.gameImg1, .gameImg2 {
-  height: 300px;
-  position: absolute;
-  
-}
-
-.gameImg2 {
-  transform: scaleX(-1);
-  right: 200px;
-}
-
-.scoreText1, .scoreText2 {
-  margin: 5% auto;
-}
-
-.shootButton {
-  margin-top: 60%;
-}
-
+/*TITLE PAGE*/
 .titleText {
-  margin: 3% auto;
-  color: #f0c75e;
+  padding-top: 10vh;
+  font-size: 6vw;
 }
-
-
 
 .definitionText {
-  margin: 3% auto;
+  font-size: 2vw;
+}
+
+.playbtn {
+  margin-top: 10vh;
+  height: 5em;
+  width: 10em;
+  background-color: #372e29;
+  border-color: #f0c75e;
+  border-width: 0.5vh;
+  border-radius: 20vh;
   color: #f0c75e;
-  font-size: 100%;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.titleRockImage {
-  height: 50%;
-  width: 20%;
+.playbtn:hover {
+  background-color: #f0c75e;
+  border-color: #372e29;
+  color: #372e29;
 }
 
-.roundDes {
-  margin: 5% auto;
+/*SETUP*/
+.setuptext {
+  font-size: 4vw;
 }
 
-.secondTitle {
-  margin-bottom: 5%;
+.roundbtn {
+  margin: 5vh 5vh;
+  height: 3em;
+  width: 7em;
+  background-color: #372e29;
+  border-color: #f0c75e;
+  border-width: 0.3vh;
+  border-radius: 20vh;
+  color: #f0c75e;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
+.roundbtn:hover {
+  background-color: #f0c75e;
+  border-color: #372e29;
+  color: #372e29;
+}
+
+.roundbtnselected {
+  background-color: #f0c75e;
+  border-color: #372e29;
+  color: #372e29;
+}
+
+.playertextinput {
+  border-radius: 20vh;
+  border: none;
+  height: 4vh;
+}
+
+/*GAME*/
+.player1-gamescreen{
+  width: 50vw;
+  position: absolute;
+  left: 0%;
+  font-size: 2vw;
+}
+.player2-gamescreen{
+  width: 50vw;
+  position: absolute;
+  right: 0%;
+  font-size: 2vw;
+}
+
+.shootButton{
+  position: absolute;
+  top: 45vh;
+  left: 93vh;
+  height: 5em;
+  width: 10em;
+  background-color: #372e29;
+  border-color: #f0c75e;
+  border-width: 0.5vh;
+  border-radius: 20vh;
+  color: #f0c75e;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.shootButton:hover {
+  background-color: #f0c75e;
+  border-color: #372e29;
+  color: #372e29;
+}
+
+.playernametext {
+  font-size: 4vw;
+  margin-bottom: 0.1vh;
+}
+
+.gameImg1, .gameImg2 {
+  position: relative;
+  top:5vh;
+  height: 30vh;
+  margin: 0vh 0vw;
+  }
+  
+  .gameImg2 {
+  transform: scaleX(-1);
+  }
+
+  .moveDes1,.moveDes2{
+    font-size: 1vw;
+  }
+
+.crown1, .crown2 {
+  position: absolute;
+  height: 10vh;
+  top: 30vh;
+}
+
+
+
+
+
+
+/*FOOTER*/
+.tomLinks {
+    margin: auto 1vw;
+}
+.LinksPanel{
+  text-align: center;
+  margin-top: 5vh;
+  }
+  .CopyrightPanel{
+  text-align: center;
+  }
+
+
 
 .hide{
   display: none;
 }
 
 #firstSection {
-  padding-top: 3%;
-  padding-bottom: 2%;
+  height: 80vh;
   background-color: #372e29;
+  text-align: center;
 }
 
 #secondSection {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  height: 80%;
+  height: 80vh;
   background-color: #372e29;
+  text-align: center;
 }
 
 #thirdSection {
-  padding-bottom: 5%;
-  margin-bottom: 0;
+  height: 80vh;
   background-color: #372e29;
+  text-align: center;
 }
 
 #Footer-Container {
-    margin-top: 0;
-    padding-top:  2%;
-    padding-bottom:  5%;
-    background-color: #372e29;
+  height: 20vh;
+  display: flexbox;
+  justify-content: center;
+  align-content: center;
+  background-color: #372e29;
 }

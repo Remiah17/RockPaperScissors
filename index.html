@@ -1,98 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montez&family=Montserrat+Alternates:wght@100;300;400;700;900&family=Montserrat:wght@100;400;900&family=Sacramento&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montez&family=Montserrat+Alternates:wght@100;300;400;700;900&family=Montserrat:wght@100;400;900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- TITLE -->
-    <section id="firstSection">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h1 class="titleText">ROCK, PAPER, SCISSORS</h1>
-            <h3 class="definitionText">Online rock, paper, and scissors simulator.</h3>
-          </div>
-          <hr>
-        </div>
-      </div>
+    <section id="firstSection" class="">
+      <h1 class="titleText">
+        <span class="">ROCK</span> , <span class="papertext">PAPER</span> ,
+        <span class="scissorstext">SCISSORS</span>
+      </h1>
+      <h3 class="definitionText">
+        Online rock, paper, and scissors simulator.
+      </h3>
+      <button type="button" name="play-button" class="playbtn">PLAY</button>
     </section>
-  
-    <section id="secondSection">
-      <div class="container">
-        <div class="row">
-          <hr>
-          <div class="col text-center">
-            <h3 class="secondTitle">How many wins?</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <button type="button" name="button" class="btn btn-outline-warning oneRound">1 win</button>
-          </div>
-          <div class="col text-center">
-            <button type="button" name="button" class="btn btn-outline-warning threeRound">3 wins</button>
-          </div>
-          <div class="col text-center">
-              <button type="button" name="button" class="btn btn-outline-warning fiveRound">5 wins</button>
-          </div>
-        </div>
+
+    <!--SETUP-->
+    <section id="secondSection" class="hide">
+      <h3 class="setuptext">How many rounds?</h3>
+      <div class="roundchoices">
+        <button id="1-round-btn" type="button" class="roundbtn">1 win</button>
+        <button id="3-round-btn" type="button" class="roundbtn">3 wins</button>
+        <button id="5-round-btn" type="button" class="roundbtn">5 wins</button>
       </div>
+      <hr />
+      <form id="playerNameFormId" name="playerNameForm" onsubmit="startGame()">
+        <h3>Player 1 Name:</h3>
+        <input
+          type="text"
+          name="Player1Name"
+          class="playertextinput"
+          required
+        />
+        <h3>Player 2 Name:</h3>
+        <input
+          type="text"
+          name="Player2Name"
+          class="playertextinput"
+          required
+        />
+        <br />
+        <button type="submit" name="button" class="roundbtn">START</button>
+      </form>
     </section>
 
     <!-- GAME -->
     <section id="thirdSection" class="hide">
-      <div class="container">
-        <div class="row stage">
-          <div class="col-5 text-center ">
-              <img src="images/crown.png" class="crown1" alt="crown-picture">
-            <h3 class="titleText">PLAYER 1</h3>
-              <h6 class="scoreText1">SCORE: 0</h6>
-            <img src="images/Launching.gif" class="gameImg1" alt="rock-smiley-picture">
-            <p class="moveDes1">READY!</p>
-          </div>
-          <div class="col-2 text-center">
-            <button type="button" name="button" class="btn btn-outline-warning shootButton">SHOOT!</button>
-            <p class="roundDes text-center"> </p>
-          </div>
-          <div class="col-5 text-center ">
-            <img src="images/crown.png" class="crown2" alt="crown-picture">
-            <h3 class="titleText">PLAYER 2</h3>
-            <h6 class="scoreText2">SCORE: 0</h6>
-            <img src="images/Launching.gif" class="gameImg2" alt="rock-smiley-picture">
-            <p class="moveDes2">READY!</p>
-          </div>
-        </div>
+      <div class="player1-gamescreen">
+        <img src="images/crown.png" class="crown1" alt="crown-picture" />
+        <h3 id="player-1-name" class="playernametext">PLAYER 1</h3>
+        <h6 id="player1-score">SCORE: 0</h6>
+        <img
+          src="images/Launching.gif"
+          class="gameImg1"
+          alt="rock-smiley-picture"
+        />
+        <p class="moveDes1">READY!</p>
       </div>
+      <div class="player2-gamescreen">
+        <img src="images/crown.png" class="crown2" alt="crown-picture" />
+        <h3 id="player-2-name" class="playernametext">PLAYER 2</h3>
+        <h6 id="player2-score">SCORE: 0</h6>
+        <img
+          src="images/Launching.gif"
+          class="gameImg2"
+          alt="rock-smiley-picture"
+        />
+        <p class="moveDes2">READY!</p>
+      </div>
+      <div class="animation">
+        <p class="roundDes text-center"></p>
+      </div>
+      <button id="shootBtn" type="button" name="button" class="shootButton">
+        SHOOT!
+      </button>
     </section>
 
     <!-- FOOTER -->
     <section id="Footer-Container">
-      <div class="container">
-          <hr>
-        <div class="row">
-          <div class="col text-center">
-            <a href="#" class="tomLinks">Website</a>
-            <a href="#" class="tomLinks">Upwork</a>
-            <a href="#" class="tomLinks">Facebook</a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col text-center">
-          <p class="FooterLink">© Copyright 2021 Rustom Mameng</p>
-          </div>
-
-        </div>
+      <hr />
+      <div class="LinksPanel">
+        <a href="https://remiah17.github.io/TMDevelop/" class="tomLinks"
+          >Website</a
+        >
+        <a href="https://github.com/Remiah17" class="tomLinks">Github</a>
+        <a href="https://www.freelancer.com/u/rustomamameng" class="tomLinks"
+          >Freelancer</a
+        >
+        <a
+          href="https://www.upwork.com/freelancers/~01dc1bededde9b6dc9"
+          class="tomLinks"
+          >Upwork</a
+        >
+        <a href="mailto: tmdevelop17@gmail.com" class="tomLinks">Email</a>
+      </div>
+      <div class="CopyrightPanel">
+        <p class="FooterLink">© Copyright 2021 Rustom Mameng</p>
+      </div>
     </section>
 
     <script src="javascript/index.js" charset="utf-8"></script>
